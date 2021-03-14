@@ -5,6 +5,8 @@ import (
 	"log"
 )
 
+const LibVer = "0.0.2"
+
 // Lib is a demo type
 type Lib struct {
 	name string
@@ -25,6 +27,6 @@ func (l *Lib) SetName(name string) {
 
 // Dump displays the contents of the Lib struct on the log
 func (l *Lib) Dump() {
-	log.Printf("Package Lib Dump")
+	log.Printf("Package Lib %s Dump",LibVer)
 	log.Printf("  Name: %s",l.name)
 }
