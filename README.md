@@ -37,10 +37,10 @@ git push -u origin master
 
 ``` sh
 cd ~/go/src/github.com/x0ray/liborg
-go build .
+go build ./...
 ```
 
-## Building the liborgtest demo command
+## Building and installing the liborgtest demo command
 
 ``` go
 export GOBIN ~/bin
